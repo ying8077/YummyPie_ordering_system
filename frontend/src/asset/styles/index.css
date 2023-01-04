@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+ul {
+  padding: 0 24px;
+  list-style-type: none;
+  background-color: #FAFAFA;
+  display: flex;
+  overflow-x: scroll;
+  box-shadow: 0 1px 2px #e6e6e6;
+  position: sticky;
+  top: 0;
+}
+
+ul::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  padding: 12px 0;
+  display: block;
+  margin-right: 24px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+ul a:last-child{
+  margin-right: 0px;
+}
+
+a.active {
+  color: #D88B25;
+  border-bottom: 2px solid #D88B25;
+  border-radius: 1px;
+}
+
+.home {
+  max-width: 400px;
+  margin: 0 auto;
+  position: relative;
+  font-family: 'Roboto', 'Noto Sans TC', sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.home-header {
+  height: 80px;
+  background-color: #f0f0f0;
+  font-weight: 700;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-logut {
+  width: 20px;
+  height: 18px;
+  background-image: url(../images/log-out.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 40px;
+  right: 20px;
+}
+
+.home-menu {
+  background-color: #FAFAFA;
+  padding-bottom: 68px;
+}
+
+.home-menu-title {
+  padding: 24px 0 14px 21px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.home-menu-recommend-title{
+  color: #D88B25;
+}
+
+.home-menu-origin-title{
+  color: #2A7DD2;
+}
+
+.home-menu-item {
+  font-size: 14px;
+  padding: 11px 21px;
+  border-bottom: 1px solid #EFEAEA;
+  display: flex;
+  align-items: center;
+}
+
+.home-menu-item-price{
+  margin-left: auto;
+  color: #808080;
+}

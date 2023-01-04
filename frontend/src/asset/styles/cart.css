@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap');
+
+.cart {
+    max-width: 400px;
+    height: 100vh;
+    margin: 0 auto;
+    padding-bottom: 68px;
+    background-color: #FAFAFA;
+    position: relative;
+    font-family: 'Roboto', 'Noto Sans TC', sans-serif;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-header {
+    height: 100px;
+    background-color: #f0f0f0;
+    font-weight: 700;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-title {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.cart-items {
+    padding: 24px 24px 16px;
+    border-bottom: 1px solid #BABABA;
+}
+
+.cart-item {
+    margin-top: 8px;
+}
+
+.cart-item-title {
+    display: flex;
+}
+
+.cart-item-price {
+    margin-left: auto;
+}
+
+.cart-item-option {
+    color: #808080;
+    display: flex;
+    flex-direction: column;
+    margin: 6px 28px;
+    position: relative;
+}
+
+.cart-item-option::before {
+    content: "";
+    width: 1px;
+    height: 28px;
+    background-color: #D88B25;
+    position: absolute;
+    top: 8px;
+    left: -8px;
+}
+
+.cart-item-total {
+    margin-top: 16px;
+    font-weight: 500;
+    display: flex;
+}
+
+.cart-item-amount {
+    color: #2A7DD2;
+    margin-left: auto;
+}
+
+.cart-member {
+    margin: 16px 24px;
+    padding: 12px;
+    border-radius: 10px;
+    background-color: #EBEBEB;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-member span {
+    margin-left: auto;
+}
+
+.cart-ways {
+    margin: 12px 24px;
+}
+
+.cart-ways .cart-title {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.cart-way {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.cart-ways input {
+    appearance: none;
+    background-color: #D9D9D9;
+    box-shadow: 0 0 0 1.5px #D9D9D9;
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.cart-ways input:checked {
+    border: 5px solid #EBEBEB;
+    background-color: #fbad05;
+    box-shadow: 0 0 0 1.5px #fbad05;
+}
+
+.cart-btn-submit {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 40px;
+    margin: auto 32px 32px;
+    color: #FFFFFF;
+    background-color: #D88B25;
+    border: none;
+    border-radius: 10px;
+}
+
+.cart-btn-submit[disabled]{
+    background-color: rgba(200, 200, 200, 0.25);
+    color:rgba(0, 0, 0, 0.3);
+}

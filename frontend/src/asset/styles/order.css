@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap');
+
+.order {
+    max-width: 400px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding-bottom: 68px;
+    background-color: #FAFAFA;
+    position: relative;
+    font-family: 'Roboto', 'Noto Sans TC', sans-serif;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+.order-header {
+    height: 100px;
+    background-color: #f0f0f0;
+    font-weight: 700;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.order-title {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.order-items {
+    padding: 24px 24px 16px;
+    border-bottom: 1px solid #BABABA;
+}
+
+.order-item {
+    margin-top: 8px;
+}
+
+.order-item-title {
+    display: flex;
+}
+
+.order-item-price {
+    margin-left: auto;
+}
+
+.order-item-option {
+    color: #808080;
+    display: flex;
+    flex-direction: column;
+    margin: 6px 28px;
+    position: relative;
+}
+
+.order-item-option::before {
+    content: "";
+    width: 1px;
+    height: 28px;
+    background-color: #D88B25;
+    position: absolute;
+    top: 8px;
+    left: -8px;
+}
+
+.order-items-total {
+    margin-top: 16px;
+    font-weight: 500;
+    display: flex;
+}
+
+.order-items-amount {
+    color: #2A7DD2;
+    margin-left: auto;
+}
+
+.order-number {
+    margin: 20px 0 8px;
+}
